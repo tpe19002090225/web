@@ -6,19 +6,39 @@
 <body>
 i'm <b>tim</b>!!!!!!!!!!
 welcome!
-<script src="jquery-3.4.1.js"></script>
-<script src="jssor.slider.min.js"></script>
+
 <script>
-    jQuery(document).ready(function ($) {
-        var options = { $AutoPlay: 1 };
-        var jssor1_slider = new $JssorSlider$("jssor_1", options);
-    });
+ 
+
+  
+   
+
+   window.alert(sum2(3,5));
+
+   function reduce(array, combine, start) {
+    let current = start;
+    for (let element of array) {
+    current = combine(current, element);
+    }
+            return current;
+    } 
+    var data=[
+    {name:'计算机安装与维护',credit:4},
+    {name:'静态网页制作',credit:4},
+    {name:'计算机编程基础',credit:4},
+    {name:'大学英语',credit:3},
+    {name:'软件技术导论',credit:3}
+];
+    console.log(
+        reduce(
+        [4,4,4,3,3],
+        // (a, b) => a + b, 0));
+        function(a,b){return a+b;}
+        ,0)
+    );
+
+
 </script>
-<div id="jssor_1" style="position:relative;top:0px;left:0px;width:980px;height:380px;overflow:hidden;">
-    <div data-u="slides" style="position:absolute;top:0px;left:0px;width:980px;height:380px;overflow:hidden;">
-        <div><img data-u="image" src="tim.jpg" /></div>
-        <div><img data-u="image" src="tim1.jpg" /></div>
-    </div>
-</div>
+
 <body>
 <html>
