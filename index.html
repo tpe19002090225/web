@@ -13,6 +13,19 @@ welcome!
         <script src="./tpe.js"></script>
         <script src="./underscore.js"></script>
         <script>
+var x=10;
+
+function fn(){
+    console.log(x);
+}
+
+function show(f){
+    var x=20;
+    (function(){
+        f();
+    })();
+}
+show(fn);
 
 
 var reduce=3;
